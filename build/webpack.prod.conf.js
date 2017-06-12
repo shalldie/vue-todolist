@@ -65,10 +65,10 @@ var webpackConfig = merge(baseWebpackConfig, {
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency',
-      inlineSource: '.(js|css)$'
-    }),
-    new HtmlWebpackInlineSourcePlugin()
+      chunksSortMode: 'dependency'
+      // inlineSource: '.(js|css)$'
+    })
+    // new HtmlWebpackInlineSourcePlugin()
     // split vendor js into its own file
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: 'vendor',
