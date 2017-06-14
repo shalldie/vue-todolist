@@ -42,7 +42,9 @@
         watch: {
             list: {
                 handler: function () {
+                    // 保存信息到localStorage
                     store.saveStore(this.list);
+                    // 弹框提示
                     this.$messageBox({
                         message: 'Change has been saved.'
                     });
